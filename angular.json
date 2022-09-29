@@ -94,11 +94,32 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://dreamerlabs.studio",
+            "cname": "dreamerlabs.studio",
+            "name": "Naomi Carrigan",
+            "email": "nhcarrigan@gmail.com"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "cli": {
-    "analytics": "22b925df-ea3f-4852-82b0-9520e31f52ca"
+    "analytics": "22b925df-ea3f-4852-82b0-9520e31f52ca",
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
