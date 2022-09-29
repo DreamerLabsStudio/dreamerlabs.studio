@@ -1,0 +1,6 @@
+.footer {
+  height: 50px;
+  /* TODO: once page has content, fix this to top and fix margins. */
+  /* position: fixed; */
+  bottom: 0;
+}

@@ -1,0 +1,16 @@
+img {
+  width: 50px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* TODO: once page has content, fix this to top and fix margins. */
+  /* position: fixed; */
+  height: 50px;
+}
+
+.header > *:not(img) {
+  padding: 0 15px;
+}
